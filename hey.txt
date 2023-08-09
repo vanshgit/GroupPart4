@@ -1,0 +1,207 @@
+Step 1: Download Oracle VirtualBox. 
+
+Step 2:  Install that..
+
+Step 3: Setup VM
+
+RAM of 6GB not less than 4GB.  (4096- 6144MB)
+1gb = 1024
+1024*4 =4096 - 6144
+
+HDD/Virtual Hard Disk -25GB  (Anything between 20GB-25GB)
+
+Processor - 2core go with 1 processor
+
+            4Core - Go with 2 processor
+
+            6Core -go with 3 processor
+                
+
+Step 4: Download ISO Image of Fedora/CentOS. 
+
+ISO Link-> https://download.fedoraproject.org/pub/fedora/linux/releases/37/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-37-1.7.iso
+
+Only if you have Visual C++ Error -> 
+https://aka.ms/vs/17/release/vc_redist.x64.exe
+
+
+Press Start on your keboard->  Open 
+Terminal!. 
+
+
+ls // listing directory
+
+ls -a //hidden files
+ls -l // long listing.. 
+ls -r //reverse order..
+ls -s //print/sort by size.
+ls -t //sort by time..
+
+ 
+man // help command..
+
+man command-you-want help on..
+man ls
+man cd 
+
+ls
+
+
+sudo passwd root 
+to set the root password.. for the root user 
+
+enter your current password then
+enter new root password two times.
+
+
+to login as  root- 
+
+su root 
+
+ls ->  list the files and directory...
+
+
+pwd - > print working directory
+
+mkdir -> make directory
+
+touch -> create empty file.
+
+rm -> remove/delete the files/folders...
+
+
+su root  // login as root
+
+ifconfig to get your ip address
+
+ssh vivekahuja@if of your machine
+enter your password!
+
+vi editor is used to edit/create files
+
+vi filename.txt
+
+press I -> to go to Insert mode
+then type your contents of the file..
+press escape key
+:wq 
+// for saving and exit the file
+
+d- > delete ...
+
+man ls
+
+cat --> show the contents of the file...
+
+pwd --> print working directory
+
+date --> shows the complete date/time..
+
+cd ~ --> takes you to current login directory
+cd /home/vivekahuja/
+cal 
+
+cal;date >  demo.txt
+
+vs 
+
+cal;date >>  demo.txt
+
+
+sudo passwd root
+
+sudo passwd yourloginID
+//setting up root password. 
+
+sudo passwd user1
+
+
+su root// login to the root!
+
+amd / i5
+Fedora - 2ghz or better
+16GB RAM
+500GB
+
+Commands to practice in class!!!
+
+cd ~
+
+cd Documents
+
+
+mkdir Demo1
+
+cd Demo1
+
+touch file1.txt
+
+//try running vi editor
+vi file1.txt
+
+press I // to to as Insert Mode
+
+//Enter any dummy data....
+
+press Escape
+
+press :wq
+
+
+whoami -// show the current user login in
+
+who - user who is logged and details...
+who
+
+
+date// tells the current date
+
+cal //see the calender..
+
+abc.txt | head
+// will show first 10 lines of the file
+
+
+1. cd ~  equivalent to cd /home/vivekahuja/
+
+2. cd Documents/
+
+3. mkdir Demo1
+
+4. cd Demo1
+
+5. touch file1.txt
+
+6. date > file1.txt
+
+7. who >> file1.txt
+
+cat file1.txt // tell me what the output!!!
+
+Now - su root
+Enter your password
+
+touch file2.txt
+who >> file2.txt
+
+cat file2.txt
+
+ls -ltrs
+-------------------------
+----MAKE SURE YOU ARE NOT RUNNING AS ROOT-----
+
+touch file4.txt
+
+//try running vi editor
+vi file4.txt
+
+press I // to to as Insert Mode
+
+//Enter any dummy data....
+
+press Escape
+
+press :wq
+
+
+more  | 

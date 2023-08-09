@@ -1,0 +1,16 @@
+1. Make a directory under your home directory called documents. Next, make a directory
+under the documents directory called spreadsheets. What is the absolute path
+for the spreadsheets directory?
+
+[vansh@fedora ~]$ cd documents/
+[vansh@fedora documents]$ mkdir spreadsheets
+[vansh@fedora documents]$ ls -l
+total 0
+drwxr-xr-x. 1 vansh vansh 52 Jan 17 15:14 Jan
+drwxr-xr-x. 1 vansh vansh  0 Jan 17 14:58 Jan17
+drwxr-xr-x. 1 vansh vansh 12 Jan 22 14:54 jan22
+drwxr-xr-x. 1 vansh vansh  0 Jan 24 15:44 spreadsheets
+[vansh@fedora documents]$ pwd
+/home/vansh/documents
+
+

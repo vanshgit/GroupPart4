@@ -1,0 +1,173 @@
+vi filename.sh  // script must end with .sh extension
+
+#!/bin/bash
+echo "Enter your name" ; 
+read name;
+echo "Your name is" $name; 
+
+:wq // to save the script 
+
+to run that.. ->  
+chmod 700  filename.sh   // we explicity need to give x -execute permission to enable script to run!!. 
+
+ro run-- ./scriptname.sh
+
+
+#!/bin/bash
+echo "enter two nos";
+echo "enter first no";
+read no1;
+echo "enter second no";
+read no2;
+sum=$(( $no1 + $no2 ));
+echo "answ is" $sum;
+
+!/bin/bash
+
+clear
+
+echo "Enter Subject 1"
+read Subject1;
+
+echo "Enter Subject 2"
+read subject2;
+
+echo "Enter subject 3"
+read subject3;
+
+sum=$(( subject1 + subject2 + subject3 ));
+
+echo "Sum is " $sum;
+
+avg=$(( sum / 3 ))
+
+echo "Average is :" $avg;  s
+
+
+
+#!/bin/bash
+# script to compare the 2 strings...  whether they are equal or not .
+#author : vansh
+#date:02/07/2022
+
+read -p "Enter first string: " VAR1;
+read -p "Enter second string: " VAR2;
+
+if [[ "$VAR1" == "$VAR2" ]]; then 
+echo "strings equal" ;
+else 
+echo "Strings not equal";
+fi
+
+[vansh@fedora Documents]$ cat example.sh
+#!/bin/bash
+
+echo "enter args" $1;
+echo "second arg" $2;
+
+sum=$(( $1 + $2 ));
+echo $sum;
+
+[vansh@fedora Documents]$ chmod example.sh
+chmod: missing operand after ‘example.sh’
+Try 'chmod --help' for more information.
+[vansh@fedora Documents]$ chmod 700 example.sh
+[vansh@fedora Documents]$ ./example.sh
+enter args
+second arg
+./example.sh: line 6: +  : syntax error: operand expected (error token is "+  ")
+
+[vansh@fedora Documents]$ ./example.sh 40 50
+enter args 40
+second arg 50
+90
+
+
+
+12/02/2023 class notes 
+
+[vansh@fedora ~]$ cd Documents/
+[vansh@fedora Documents]$ vi commandlinestring.sh
+[vansh@fedora Documents]$ chmod 700 commandlinestring.sh
+[vansh@fedora Documents]$ ./commandlinestring.sh kemcho majama
+first argument is kemcho
+second argument is  majama
+./commandlinestring.sh: line 11: syntax error: unexpected end of file
+[vansh@fedora Documents]$ cat commandlinestring.sh
+#!/bin/bash
+
+echo "first argument is" $1
+echo "second argument is " $2
+
+if [[ "$1" == "$2" ]]; then 
+echo "string are equal ."
+else 
+echo "string are not equal . "
+ 
+[vansh@fedora Documents]$ vi stringlinecommand.sh
+[vansh@fedora Documents]$ vi commandlinesting.sh
+[vansh@fedora Documents]$ cat commandlinestring.sh
+#!/bin/bash
+
+echo "first argument is" $1
+echo "second argument is " $2
+
+if [[ "$1" == "$2" ]]; then 
+echo "string are equal ."
+else 
+echo "string are not equal . "
+ 
+[vansh@fedora Documents]$ vi commandlinestring.sh
+[vansh@fedora Documents]$ ./ commandlinestring.sh kemcho majama
+bash: ./: Is a directory
+[vansh@fedora Documents]$ ./commandlinestring.sh kemcho majama
+first argument is kemcho
+second argument is  majama
+./commandlinestring.sh: line 11: syntax error: unexpected end of file
+[vansh@fedora Documents]$ vi commandlinestring.sh
+[vansh@fedora Documents]$ ./commandlinestrring.sh kemcho hello
+bash: ./commandlinestrring.sh: No such file or directory
+[vansh@fedora Documents]$ ./commandlinestring.sh kemcho hello
+first argument is kemcho
+second argument is  hello
+string are not equal . 
+[vansh@fedora Documents]$ vi scriptwith3concepts.sh
+[vansh@fedora Documents]$ ./scriptwith3concepts.sh 20 5
+bash: ./scriptwith3concepts.sh: Permission denied
+[vansh@fedora Documents]$ chmod 700 scriptwith3concepts.sh
+[vansh@fedora Documents]$ ./scriptwith3concepts.sh 20 5
+4
+
+
+ASSIGNMENT QUESTION NO.  4 
+[vansh@fedora ~]$ cd /etc/
+[vansh@fedora etc]$ cat passwd | grep "vansh ."
+vansh:x:1000:1000:vansh .:/home/vansh:/bin/bash
+[vansh@fedora etc]$ 
+
+
+first create a file by vi 
+then cat file | cut -c 1-5 > newfile.txt
+
+
+userId = $(cat/etc / passwd | grep "$userName" | cut -d ":" -f3)
+
+
+[vansh@fedora ~]$ cd /etc/
+[vansh@fedora etc]$ cat passwd | grep "vansh ."
+vansh:x:1000:1000:vansh .:/home/vansh:/bin/bash
+[vansh@fedora etc]$ read userName
+vansh 
+[vansh@fedora etc]$ userId=$(cat /etc/passwd | grep "$userName" | cut -d ":" -f3)
+[vansh@fedora etc]$ echo $userID
+
+[vansh@fedora etc]$ echo $userId
+1000
+[vansh@fedora etc]$ 
+cat/etc/passwd | grep $username > sample.txt 
+cat sample.txt | cut -d ":" -f3 
+1000
+
+question 5 
+ echo $ 
+
